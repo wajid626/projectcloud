@@ -27,12 +27,7 @@
         
       });
       
-     }$( "#rename" )
-      .href()
-      .click(function() {
-        $( "#dialog-form" ).dialog( "open" );
-      });
-  });
+     }
       
       
      </script>  
@@ -51,9 +46,7 @@
           <a href="#" style="text-decoration: none;color:blue;font-size:15px" onClick='window.location.href= redirectUrl("clone/")'> &nbsp; Clone VM  &nbsp; </a>
           <a href="#" style="text-decoration: none;color:ginger brown;font-size:15px;" onClick='window.location.href= redirectUrl("clone/")'> &nbsp; Remove VM  &nbsp; </a> 
            <a href="#" id="rename" style="text-decoration: none;color:cyan;font-size:15px" > &nbsp; Rename VM  &nbsp; </a>
-             <p>
-              <form:input />
-            </p>
+ 
       <br>
           <a href="#" style="text-decoration: none;color:red;font-size:15px" onClick='window.location.href= redirectUrl("poweroff/")'>&nbsp; Power Off VM   &nbsp; </a>
           <a href="#" style="text-decoration: none;color:orange;font-size:15px" onClick='window.location.href= redirectUrl("suspend/")'>&nbsp; Suspend VM   &nbsp; &nbsp;</a>
