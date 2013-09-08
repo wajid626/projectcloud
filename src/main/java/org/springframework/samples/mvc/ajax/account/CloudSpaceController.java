@@ -138,7 +138,9 @@ public class CloudSpaceController {
            poweredoffVal.put("vmname", vm.getName());
            poweredoffVal.put("guestosname", vm.getConfig().getGuestFullName());
            poweredoffVal.put("memory", vm.getConfig().getHardware().getMemoryMB());
+           if (vm.getConfig()!=null && vm.getConfig().getHardware()!=null){
            poweredoffVal.put("cpu", vm.getConfig().getHardware().getNumCPU());
+          }
            poweredoffValList.add(poweredoffVal);
         }
         }
